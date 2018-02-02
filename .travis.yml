@@ -10,7 +10,7 @@ script:
   - yarn generate
 deploy:
   provider: script
-  script: push-dir --dir=dist --branch=gh-pages
+  script: ./node_modules/.bin/push-dir --dir=dist --branch=gh-pages
   skip-cleanup: true
   keep-history: true
   on:
