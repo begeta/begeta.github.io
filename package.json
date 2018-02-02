@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "begeta": "^0.1.6",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "push-dir": "^0.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
