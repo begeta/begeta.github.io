@@ -7,11 +7,12 @@ cache:
 before_script:
   - yarn
 script: 
-  - yarn generate
+  - yarn build
 deploy:
-  provider: script
-  script: ./node_modules/.bin/push-dir --dir=dist --branch=gh-pages
+  provider: pages
   skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
+  local-dir: dist
   on:
     branch: master
