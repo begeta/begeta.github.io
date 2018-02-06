@@ -20,6 +20,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  css: [
+    { src: 'begeta/css/begeta.min.css', lang: 'css' }
+  ],
   build: {
     /*
     ** Run ESLint on save
