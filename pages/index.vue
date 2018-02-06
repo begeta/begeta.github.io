@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       <app-logo/>
-      <h1 class="title">
+      <h1 class="title bg-cl-success pd-10px">
         begeta-github
       </h1>
       <h2 class="subtitle">
