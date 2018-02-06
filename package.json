@@ -13,9 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "begeta": "^0.1.6",
+    "begeta": "^0.1.7",
+    "buefy": "^0.6.3",
+    "bulma": "^0.6.2",
     "nuxt": "^1.0.0",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "vue-mq": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

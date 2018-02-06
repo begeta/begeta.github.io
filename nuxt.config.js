@@ -37,5 +37,15 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    {
+      src: '~/plugins/buefy',
+      ssr: true
+    },
+    {
+      src: '~/plugins/vue-mq',
+      ssr: false
+    }
+  ]
 }
