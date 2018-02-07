@@ -1,12 +1,12 @@
 <template>
   <div class="menu-bar">
     <nav class="navbar is-navbar-width" role="navigation" aria-label="main navigation">
-      <div class="container is-flex-align-column is-background-navbar">
-        <div class="navbar-brand is-navbar-height is-flex-align-item-center is-warp-navbar">
-          <a class="navbar-item is-full-width is-padding-left-3 is-padding-right-3">
+      <div class="container al-it-column is-background-navbar">
+        <!-- <div class="navbar-brand is-navbar-height al-it-center is-warp-navbar">
+          <a class="navbar-item is-full-width pd-l-15px pd-r-15px">
             <img class="is-brand-size" src="/images/logo-atomic.svg" alt="Atomic">
           </a>
-        </div>
+        </div> -->
 
         <div>
           <aside class="column menu is-menu-container is-scroll-container is-flex-align-column is-flex-space is-background-aside">
@@ -233,6 +233,10 @@
 </script>
 
 <style scoped>
+.is-full-width {
+  width: 100%;
+  max-width: 100%;
+}
 .is-active-menu {
   color: #000000;
   background: rgba(0, 0, 0, 0.03);

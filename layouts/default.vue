@@ -1,30 +1,24 @@
 <template>
-<div>
-  <div class="is-layout">
+<div class="dp-flex f-drt-column">
+  <nav-bar/>
+  <div class="dp-flex f-drt-row f-drt-column-mobile">
     <nav-menu/>
-    <section class="section is-section-container is-full-width is-paddingless is-background-white">
-      <nuxt/>
-    </section>
+    <nuxt/>
   </div>
 </div>
 </template>
 
 <script>
 import NavMenu from '@/components/NavMenu'
+import NavBar from '@/components/NavBar'
 
 export default {
   components: {
-    NavMenu
+    NavMenu,
+    NavBar
   }
 }
 </script>
 
-<style scoped>
-.is-height-50px{
-  height: 50px;
-}
-
-.is-width-800px{
-  max-width: 800px;
-}
+<style>
 </style>

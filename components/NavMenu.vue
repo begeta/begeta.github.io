@@ -1,7 +1,7 @@
 <template>
   <div class="is-menu-bar-sticky">
-    <nav-item class="is-hidden-touch is-hidden-desktop-only"/>
-    <nav-mobile class="is-hidden-widescreen"/>
+    <nav-item class="dp-none-mobile"/>
+    <!-- <nav-mobile class="is-hidden-widescreen"/> -->
   </div>
 </template>
 
