@@ -3,7 +3,9 @@
   <nav-bar/>
   <div class="dp-flex f-drt-row f-drt-column-mobile">
     <nav-menu/>
-    <nuxt/>
+    <div class="h-55calc w-100pct ovf-y-auto">
+      <nuxt/>
+    </div>
   </div>
 </div>
 </template>

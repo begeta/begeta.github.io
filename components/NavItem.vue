@@ -1,221 +1,215 @@
 <template>
   <div class="menu-bar">
     <nav class="navbar is-navbar-width" role="navigation" aria-label="main navigation">
-      <div class="container al-it-column is-background-navbar">
-        <!-- <div class="navbar-brand is-navbar-height al-it-center is-warp-navbar">
-          <a class="navbar-item is-full-width pd-l-15px pd-r-15px">
-            <img class="is-brand-size" src="/images/logo-atomic.svg" alt="Atomic">
-          </a>
-        </div> -->
-
+      <div class="container al-it-column bg-cl-light">
         <div>
-          <aside class="column menu is-menu-container is-scroll-container is-flex-align-column is-flex-space is-background-aside">
-            <ul class="menu-list is-padding-left-3 is-padding-right-3 is-size-7">
+          <aside class="column menu is-menu-container ovf-y-auto h-55calc w-100pct  f-drt-column jtf-space-between is-background-aside">
+            <ul class="menu-list pd-hrzt-15px f-s-15px">
               <li>
-                <a href="" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-alignment' ? 'is-active-menu' : ''">
+                <a href="" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-alignment' ? 'is-active-menu' : ''">
                   Alignment
                 </a>
                   <ul>
                     <li>
-                      <a href="/atomic/flexdirection" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-flexdirection' ? 'is-active-menu' : ''">
+                      <a href="/atomic/flexdirection" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-flexdirection' ? 'is-active-menu' : ''">
                         Flex Direction
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/flexwrap" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-flexwrap' ? 'is-active-menu' : ''">
+                      <a href="/atomic/flexwrap" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-flexwrap' ? 'is-active-menu' : ''">
                         Flex Wrap
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/flex" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-flex' ? 'is-active-menu' : ''">
+                      <a href="/atomic/flex" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-flex' ? 'is-active-menu' : ''">
                         Flex
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/alignitems" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-alignitems' ? 'is-active-menu' : ''">
+                      <a href="/atomic/alignitems" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-alignitems' ? 'is-active-menu' : ''">
                         Align Items
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/justifyitems" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-justifyitems' ? 'is-active-menu' : ''">
+                      <a href="/atomic/justifyitems" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-justifyitems' ? 'is-active-menu' : ''">
                         Justify Items
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/aligncontent" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-aligncontent' ? 'is-active-menu' : ''">
+                      <a href="/atomic/aligncontent" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-aligncontent' ? 'is-active-menu' : ''">
                         Align Content
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/justifycontent" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-justifycontent' ? 'is-active-menu' : ''">
+                      <a href="/atomic/justifycontent" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-justifycontent' ? 'is-active-menu' : ''">
                         Justify Content
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/alignself" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-alignself' ? 'is-active-menu' : ''">
+                      <a href="/atomic/alignself" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-alignself' ? 'is-active-menu' : ''">
                         Align Self
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/justifyself" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-justifyself' ? 'is-active-menu' : ''">
+                      <a href="/atomic/justifyself" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-justifyself' ? 'is-active-menu' : ''">
                         Justify Self
                       </a>
                     </li>
                   </ul>
               </li>
               <li>
-                <a href="" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-background' ? 'is-active-menu' : ''">
+                <a href="" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-background' ? 'is-active-menu' : ''">
                   Background
                 </a>
                   <ul>
                     <li>
-                      <a href="/atomic/backgroundcolor" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-backgroundcolor' ? 'is-active-menu' : ''">
+                      <a href="/atomic/backgroundcolor" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-backgroundcolor' ? 'is-active-menu' : ''">
                         Background Color
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/backgroundsize" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-backgroundsize' ? 'is-active-menu' : ''">
+                      <a href="/atomic/backgroundsize" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-backgroundsize' ? 'is-active-menu' : ''">
                         Background Size
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/backgroundrepeat" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-backgroundrepeat' ? 'is-active-menu' : ''">
+                      <a href="/atomic/backgroundrepeat" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-backgroundrepeat' ? 'is-active-menu' : ''">
                         Background Repeat
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/backgroundposition" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-backgroundposition' ? 'is-active-menu' : ''">
+                      <a href="/atomic/backgroundposition" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-backgroundposition' ? 'is-active-menu' : ''">
                         Background Position
                       </a>
                     </li>
                   </ul>
               </li>
               <li>
-                <a href="" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-background' ? 'is-active-menu' : ''">
+                <a href="" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-background' ? 'is-active-menu' : ''">
                   Border
                 </a>
                   <ul>
                     <li>
-                      <a href="/atomic/borderstyle" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-borderstyle' ? 'is-active-menu' : ''">
+                      <a href="/atomic/borderstyle" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-borderstyle' ? 'is-active-menu' : ''">
                         Border Style
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/borderwidth" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-borderwidth' ? 'is-active-menu' : ''">
+                      <a href="/atomic/borderwidth" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-borderwidth' ? 'is-active-menu' : ''">
                         Border Width
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/bordercolor" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-bordercolor' ? 'is-active-menu' : ''">
+                      <a href="/atomic/bordercolor" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-bordercolor' ? 'is-active-menu' : ''">
                         Border Color
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/borderradius" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-borderradius' ? 'is-active-menu' : ''">
+                      <a href="/atomic/borderradius" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-borderradius' ? 'is-active-menu' : ''">
                         Border Radius
                       </a>
                     </li>
                   </ul>
               </li>
               <li>
-                <a href="/atomic/boxposition" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-boxposition' ? 'is-active-menu' : ''">
+                <a href="/atomic/boxposition" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-boxposition' ? 'is-active-menu' : ''">
                   Box Position
                 </a>
               </li>
               <li>
-                <a href="/atomic/boxsize" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-boxsize' ? 'is-active-menu' : ''">
+                <a href="/atomic/boxsize" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-boxsize' ? 'is-active-menu' : ''">
                   Box Size
                 </a>
               </li>
               <li>
-                <a href="/atomic/color" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-color' ? 'is-active-menu' : ''">
+                <a href="/atomic/color" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-color' ? 'is-active-menu' : ''">
                   Color
                 </a>
               </li>
               <li>
-                <a href="/atomic/cursor" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-cursor' ? 'is-active-menu' : ''">
+                <a href="/atomic/cursor" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-cursor' ? 'is-active-menu' : ''">
                   Cursor
                 </a>
               </li>
               <li>
-                <a href="/atomic/display" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-display' ? 'is-active-menu' : ''">
+                <a href="/atomic/display" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-display' ? 'is-active-menu' : ''">
                   Display
                 </a>
               </li>
               <li>
-                <a href="/atomic/float" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-float' ? 'is-active-menu' : ''">
+                <a href="/atomic/float" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-float' ? 'is-active-menu' : ''">
                   Float
                 </a>
               </li>
               <li>
-                <a href="/atomic/margin" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-margin' ? 'is-active-menu' : ''">
+                <a href="/atomic/margin" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-margin' ? 'is-active-menu' : ''">
                   Margin
                 </a>
               </li>
               <li>
-                <a href="/atomic/objectfit" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-objectfit' ? 'is-active-menu' : ''">
+                <a href="/atomic/objectfit" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-objectfit' ? 'is-active-menu' : ''">
                   Object Fit
                 </a>
               </li>
               <li>
-                <a href="/atomic/opacity" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-opacity' ? 'is-active-menu' : ''">
+                <a href="/atomic/opacity" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-opacity' ? 'is-active-menu' : ''">
                   Opacity
                 </a>
               </li>
               <li>
-                <a href="/atomic/overflow" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-overflow' ? 'is-active-menu' : ''">
+                <a href="/atomic/overflow" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-overflow' ? 'is-active-menu' : ''">
                   Overflow
                 </a>
               </li>
               <li>
-                <a href="/atomic/padding" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-padding' ? 'is-active-menu' : ''">
+                <a href="/atomic/padding" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-padding' ? 'is-active-menu' : ''">
                   Padding
                 </a>
               </li>
               <li>
-                <a href="" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-typography' ? 'is-active-menu' : ''">
+                <a href="" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-typography' ? 'is-active-menu' : ''">
                   Typography
                 </a>
                   <ul>
                     <li>
-                      <a href="/atomic/fontsize" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-fontsize' ? 'is-active-menu' : ''">
+                      <a href="/atomic/fontsize" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-fontsize' ? 'is-active-menu' : ''">
                         Font Size
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/fontweight" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-fontweight' ? 'is-active-menu' : ''">
+                      <a href="/atomic/fontweight" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-fontweight' ? 'is-active-menu' : ''">
                         Font Weight
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/lineheight" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-lineheight' ? 'is-active-menu' : ''">
+                      <a href="/atomic/lineheight" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-lineheight' ? 'is-active-menu' : ''">
                         Line Height
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/textalign" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-textalign' ? 'is-active-menu' : ''">
+                      <a href="/atomic/textalign" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-textalign' ? 'is-active-menu' : ''">
                         Text Align
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/texttransform" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-texttransform' ? 'is-active-menu' : ''">
+                      <a href="/atomic/texttransform" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-texttransform' ? 'is-active-menu' : ''">
                         Text Transform
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/letterspacing" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-letterspacing' ? 'is-active-menu' : ''">
+                      <a href="/atomic/letterspacing" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-letterspacing' ? 'is-active-menu' : ''">
                         Letter Spacing
                       </a>
                     </li>
                     <li>
-                      <a href="/atomic/whitespace" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-whitespace' ? 'is-active-menu' : ''">
+                      <a href="/atomic/whitespace" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-whitespace' ? 'is-active-menu' : ''">
                         White Space
                       </a>
                     </li>
                   </ul>
               </li>
               <li>
-                <a href="/atomic/z-index" class="is-display-flex is-height-50px is-paddingless is-flex-align-item-center is-fill-gray" :class="$route.name === 'atomic-z-index' ? 'is-active-menu' : ''">
+                <a href="/atomic/z-index" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === 'atomic-z-index' ? 'is-active-menu' : ''">
                   Z-Index
                 </a>
               </li>
@@ -233,11 +227,12 @@
 </script>
 
 <style scoped>
-.is-full-width {
-  width: 100%;
-  max-width: 100%;
+ul {
+  list-style: none;
 }
-.is-active-menu {
+
+
+/* .is-active-menu {
   color: #000000;
   background: rgba(0, 0, 0, 0.03);
   fill: #0050ff;
@@ -295,7 +290,7 @@
   fill: currentColor;
 }
 
-.is-icon-container { /*50px*/
+.is-icon-container {
   width: 3.125rem;
   height: 3.125rem;
 }
@@ -330,19 +325,15 @@
   margin-right: auto;
 }
 
-.is-padding-16 {
-  padding: 15px;
-}
-
 .is-nav-mobile {
   background: red;
   width: 100%;
   height: 100vh;
-}
+} */
 
 /* Account Bar
   -------------------------- */
-.is-account-menu {
+/* .is-account-menu {
   display: flex;
   height: 60px;
   align-items: center;
@@ -359,12 +350,12 @@
 
 .is-account-detail {
   width: 160px;
-}
+} */
 
 
 /* Scrollbar
   -------------------------- */
-.is-scroll-container {
+/* .is-scroll-container {
   width: 100%;
   height: calc(100vh - 60px);
   overflow-y: auto;
@@ -380,11 +371,11 @@
 
 .is-scroll-container::-webkit-scrollbar-track {
   background-color: rgba(35,44,65,0.01);
-}
+} */
 
 /* Mobile
   -------------------------- */
-@media screen and (max-width: 1215px) {
+/* @media screen and (max-width: 1215px) {
   .is-background-navbar {
     background-color: #FFFFFF;
   }
@@ -408,5 +399,5 @@
   .is-background-aside {
     background-color: #f9f9f9;
   }
-}
+} */
 </style>
