@@ -6,12 +6,12 @@
           <aside class="column f-s-16px pd-0px ovf-y-auto h-55calc w-100pct f-drt-column jtf-space-between is-background-aside">
             <ul id="menu-list" class="l-h-125pct pd-hrzt-15px f-s-15px">
               <li :key="menu.routeName" v-for="menu in menus">
-                <a :href="menu.path" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routeName ? 'is-active-menu' : ''">
+                <a @click="$router.push({path: menu.path})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routeName ? 'is-active-menu' : ''">
                   {{menu.name}}
                 </a>
                 <ul v-if="menu.subMenus">
                   <li :key="subMenu.routeName" v-for="subMenu in menu.subMenus">
-                    <a :href="subMenu.path" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === subMenu.routeName ? 'is-active-menu' : ''">
+                    <a @click="$router.push({path: menu.path+subMenu.path})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === subMenu.routeName ? 'is-active-menu' : ''">
                       {{subMenu.name}}
                     </a>
                   </li>
@@ -31,47 +31,47 @@
       return {
         menus: [
           {
-            path: '',
+            path: '/alignment',
             name: 'Alignment',
             routeName: 'atomic-alignment',
             subMenus: [
               {
-                path: '/atomic/flexdirection',
+                path: '/flexdirection',
                 name: 'Flex Direction',
                 routeName: 'atomic-flexdirection',
               },
               {
-                path: '/atomic/flexwrap',
+                path: '/flexwrap',
                 name: 'Flex Wrap',
                 routeName: 'atomic-flexwrap'
               },
               {
-                path: '/atomic/flex',
+                path: '/flex',
                 name: 'Flex',
                 routeName: 'atomic-flex'
               },
               {
-                path: '/atomic/alignitems',
+                path: '/alignitems',
                 name: 'Align Items',
                 routeName: 'atomic-alignitems'
               },
               {
-                path: '/atomic/justifyitems',
+                path: '/justifyitems',
                 name: 'Justify Items',
                 routeName: 'atomic-justifyitems'
               },
               {
-                path: '/atomic/aligncontent',
+                path: '/aligncontent',
                 name: 'Align Content',
                 routeName: 'atomic-aligncontent'
               },
               {
-                path: '/atomic/alignself',
+                path: '/alignself',
                 name: 'Align Self',
                 routeName: 'atomic-alignself'
               },
               {
-                path: '/atomic/justifyself',
+                path: '/justifyself',
                 name: 'Justify Self',
                 routeName: 'atomic-justifyself'
               }
@@ -83,22 +83,22 @@
             routeName: 'atomic-background',
             subMenus: [
               {
-                path: '/atomic/backgroundcolor',
+                path: '/backgroundcolor',
                 name: 'Background Color',
                 routeName: 'atomic-backgroundcolor',
               },
               {
-                path: '/atomic/backgroundsize',
+                path: '/backgroundsize',
                 name: 'Background Size',
                 routeName: 'atomic-backgroundsize',
               },
               {
-                path: '/atomic/backgroundrepeat',
+                path: '/backgroundrepeat',
                 name: 'Background Repeat',
                 routeName: 'atomic-backgroundrepeat',
               },
               {
-                path: '/atomic/backgroundposition',
+                path: '/backgroundposition',
                 name: 'Background Position',
                 routeName: 'atomic-backgroundposition',
               }
@@ -110,79 +110,79 @@
             routeName: 'atomic-border',
             subMenus: [
               {
-                path: '/atomic/borderstyle',
+                path: '/borderstyle',
                 name: 'Border Style',
                 routeName: 'atomic-borderstyle',
               },
               {
-                path: '/atomic/borderwidth',
+                path: '/borderwidth',
                 name: 'Border Width',
                 routeName: 'atomic-borderwidth',
               },
               {
-                path: '/atomic/bordercolor',
+                path: '/bordercolor',
                 name: 'Border Color',
                 routeName: 'atomic-bordercolor',
               },
               {
-                path: '/atomic/borderradius',
+                path: '/borderradius',
                 name: 'Border Radius',
                 routeName: 'atomic-borderradius',
               }
             ]
           },
           {
-            path: '/atomic/boxposition',
+            path: '/boxposition',
             name: 'Box Position',
             routeName: 'atomic-boxposition',
           },
           {
-            path: '/atomic/boxsize',
+            path: '/boxsize',
             name: 'Box Size',
             routeName: 'atomic-boxsize',
           },
           {
-            path: '/atomic/color',
+            path: '/color',
             name: 'Color',
             routeName: 'atomic-color',
           },
           {
-            path: '/atomic/cursor',
+            path: '/cursor',
             name: 'Cursor',
             routeName: 'atomic-cursor',
           },
           {
-            path: '/atomic/display',
+            path: '/display',
             name: 'Display',
             routeName: 'atomic-display',
           },
           {
-            path: '/atomic/float',
+            path: '/float',
             name: 'Float',
             routeName: 'atomic-float',
           },
           {
-            path: '/atomic/margin',
+            path: '/margin',
             name: 'Margin',
             routeName: 'atomic-margin',
           },
           {
-            path: '/atomic/objectfit',
+            path: '/objectfit',
             name: 'Object Fit',
             routeName: 'atomic-objectfit',
           },
           {
-            path: '/atomic/opacity',
+            path: '/opacity',
             name: 'Opacity',
             routeName: 'atomic-opacity',
           },
           {
-            path: '/atomic/overflow',
+            path: '/overflow',
             name: 'Overflow',
             routeName: 'atomic-overflow',
           },
           {
-            path: '/atomic/padding',
+            path: '/padding',
             name: 'Padding',
             routeName: 'atomic-padding',
           },
@@ -192,44 +192,44 @@
             routeName: 'atomic-typography',
             subMenus: [
               {
-                path: '/atomic/fontsize',
+                path: '/fontsize',
                 name: 'Font Size',
                 routeName: 'atomic-fontsize',
               },
               {
-                path: '/atomic/fontweight',
+                path: '/fontweight',
                 name: 'Font Weight',
                 routeName: 'atomic-fontweight',
               },
               {
-                path: '/atomic/lineheight',
+                path: '/lineheight',
                 name: 'Line Height',
                 routeName: 'atomic-lineheight',
               },
               {
-                path: '/atomic/textalign',
+                path: '/textalign',
                 name: 'Text Align',
                 routeName: 'atomic-textalign',
               },
               {
-                path: '/atomic/texttransform',
+                path: '/texttransform',
                 name: 'Text Transform',
                 routeName: 'atomic-texttransform',
               },
               {
-                path: '/atomic/letterspacing',
+                path: '/letterspacing',
                 name: 'Letter Spacing',
                 routeName: 'atomic-letterspacing',
               },
               {
-                path: '/atomic/whitespace',
+                path: '/whitespace',
                 name: 'White Space',
                 routeName: 'atomic-whitespace',
               }
             ]
           },
           {
-            path: '/atomic/z-index',
+            path: '/z-index',
             name: 'Z-Index',
             routeName: 'atomic-z-index',
           }
@@ -261,5 +261,6 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 </style>
