@@ -5,13 +5,13 @@
         <div>
           <aside class="column f-s-16px pd-0px ovf-y-auto h-55calc w-100pct f-drt-column jtf-space-between is-background-aside">
             <ul id="menu-list" class="l-h-125pct pd-hrzt-15px f-s-15px">
-              <li :key="menu.routeName" v-for="menu in menus">
-                <a @click="$router.push({path: menu.path})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routeName ? 'is-active-menu' : ''">
+              <li :key="menu.routerName" v-for="menu in menus">
+                <a @click="$router.push({name: menu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routerName ? 'is-active-menu' : ''">
                   {{menu.name}}
                 </a>
                 <ul v-if="menu.subMenus">
-                  <li :key="subMenu.routeName" v-for="subMenu in menu.subMenus">
-                    <a @click="$router.push({path: menu.path+subMenu.path})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === subMenu.routeName ? 'is-active-menu' : ''">
+                  <li :key="subMenu.routerName" v-for="subMenu in menu.subMenus">
+                    <a @click="$router.push({name: subMenu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === subMenu.routerName ? 'is-active-menu' : ''">
                       {{subMenu.name}}
                     </a>
                   </li>
@@ -31,207 +31,168 @@
       return {
         menus: [
           {
-            path: '/alignment',
             name: 'Alignment',
-            routeName: 'atomic-alignment',
+            routerName: 'alignment',
             subMenus: [
               {
-                path: '/flexdirection',
                 name: 'Flex Direction',
-                routeName: 'atomic-flexdirection',
+                routerName: 'alignment-flexdirection',
               },
               {
-                path: '/flexwrap',
                 name: 'Flex Wrap',
-                routeName: 'atomic-flexwrap'
+                routerName: 'alignment-flexwrap'
               },
               {
-                path: '/flex',
                 name: 'Flex',
-                routeName: 'atomic-flex'
+                routerName: 'alignment-flex'
               },
               {
-                path: '/alignitems',
                 name: 'Align Items',
-                routeName: 'atomic-alignitems'
+                routerName: 'alignment-alignitems'
               },
               {
-                path: '/justifyitems',
                 name: 'Justify Items',
-                routeName: 'atomic-justifyitems'
+                routerName: 'alignment-justifyitems'
               },
               {
-                path: '/aligncontent',
                 name: 'Align Content',
-                routeName: 'atomic-aligncontent'
+                routerName: 'alignment-aligncontent'
               },
               {
-                path: '/alignself',
                 name: 'Align Self',
-                routeName: 'atomic-alignself'
+                routerName: 'alignment-alignself'
               },
               {
-                path: '/justifyself',
                 name: 'Justify Self',
-                routeName: 'atomic-justifyself'
+                routerName: 'alignment-justifyself'
               }
             ]
           },
           {
-            path: '',
             name: 'Background',
-            routeName: 'atomic-background',
+            routerName: 'background',
             subMenus: [
               {
-                path: '/backgroundcolor',
                 name: 'Background Color',
-                routeName: 'atomic-backgroundcolor',
+                routerName: 'background-backgroundcolor',
               },
               {
-                path: '/backgroundsize',
                 name: 'Background Size',
-                routeName: 'atomic-backgroundsize',
+                routerName: 'background-backgroundsize',
               },
               {
-                path: '/backgroundrepeat',
                 name: 'Background Repeat',
-                routeName: 'atomic-backgroundrepeat',
+                routerName: 'background-backgroundrepeat',
               },
               {
-                path: '/backgroundposition',
                 name: 'Background Position',
-                routeName: 'atomic-backgroundposition',
+                routerName: 'background-backgroundposition',
               }
             ]
           },
           {
-            path: '',
             name: 'Border',
-            routeName: 'atomic-border',
+            routerName: 'border',
             subMenus: [
               {
-                path: '/borderstyle',
                 name: 'Border Style',
-                routeName: 'atomic-borderstyle',
+                routerName: 'border-borderstyle',
               },
               {
-                path: '/borderwidth',
                 name: 'Border Width',
-                routeName: 'atomic-borderwidth',
+                routerName: 'border-borderwidth',
               },
               {
-                path: '/bordercolor',
                 name: 'Border Color',
-                routeName: 'atomic-bordercolor',
+                routerName: 'border-bordercolor',
               },
               {
-                path: '/borderradius',
                 name: 'Border Radius',
-                routeName: 'atomic-borderradius',
+                routerName: 'border-borderradius',
               }
             ]
           },
           {
-            path: '/boxposition',
             name: 'Box Position',
-            routeName: 'atomic-boxposition',
+            routerName: 'boxposition',
           },
           {
-            path: '/boxsize',
             name: 'Box Size',
-            routeName: 'atomic-boxsize',
+            routerName: 'boxsize',
           },
           {
-            path: '/color',
             name: 'Color',
-            routeName: 'atomic-color',
+            routerName: 'color',
           },
           {
-            path: '/cursor',
             name: 'Cursor',
-            routeName: 'atomic-cursor',
+            routerName: 'cursor',
           },
           {
-            path: '/display',
             name: 'Display',
-            routeName: 'atomic-display',
+            routerName: 'display',
           },
           {
-            path: '/float',
             name: 'Float',
-            routeName: 'atomic-float',
+            routerName: 'float',
           },
           {
-            path: '/margin',
             name: 'Margin',
-            routeName: 'atomic-margin',
+            routerName: 'margin',
           },
           {
-            path: '/objectfit',
             name: 'Object Fit',
-            routeName: 'atomic-objectfit',
+            routerName: 'objectfit',
           },
           {
-            path: '/opacity',
             name: 'Opacity',
-            routeName: 'atomic-opacity',
+            routerName: 'opacity',
           },
           {
-            path: '/overflow',
             name: 'Overflow',
-            routeName: 'atomic-overflow',
+            routerName: 'overflow',
           },
           {
-            path: '/padding',
             name: 'Padding',
-            routeName: 'atomic-padding',
+            routerName: 'padding',
           },
           {
-            path: '',
             name: 'Typography',
-            routeName: 'atomic-typography',
+            routerName: 'typography',
             subMenus: [
               {
-                path: '/fontsize',
                 name: 'Font Size',
-                routeName: 'atomic-fontsize',
+                routerName: 'typography-fontsize',
               },
               {
-                path: '/fontweight',
                 name: 'Font Weight',
-                routeName: 'atomic-fontweight',
+                routerName: 'typography-fontweight',
               },
               {
-                path: '/lineheight',
                 name: 'Line Height',
-                routeName: 'atomic-lineheight',
+                routerName: 'typography-lineheight',
               },
               {
-                path: '/textalign',
                 name: 'Text Align',
-                routeName: 'atomic-textalign',
+                routerName: 'typography-textalign',
               },
               {
-                path: '/texttransform',
                 name: 'Text Transform',
-                routeName: 'atomic-texttransform',
+                routerName: 'typography-texttransform',
               },
               {
-                path: '/letterspacing',
                 name: 'Letter Spacing',
-                routeName: 'atomic-letterspacing',
+                routerName: 'typography-letterspacing',
               },
               {
-                path: '/whitespace',
                 name: 'White Space',
-                routeName: 'atomic-whitespace',
+                routerName: 'typography-whitespace',
               }
             ]
           },
           {
-            path: '/z-index',
             name: 'Z-Index',
-            routeName: 'atomic-z-index',
+            routerName: 'z-index',
           }
         ]
       }
