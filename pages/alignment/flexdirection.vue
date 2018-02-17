@@ -4,23 +4,24 @@
     <div>ใช้สำหรับกำหนดทิศทางการจัดวางของ Flex Items</div>
 
     <h3>Property</h3>
-    <div class="dp-flex mg-5px">
-      <div class="dp-flex f-drt-column">
-        <div class="f-w-bold bd-w-1px bd-st-solid bd-cl-grey pd-5px">
-          Class
-        </div>
-        <div class="bd-w-1px bd-st-solid bd-cl-grey pd-5px">
-          f-drt-[value]-[responsive]
-        </div>
-      </div>
-      <div class="dp-flex f-drt-column">
-        <div class="f-w-bold bd-w-1px bd-st-solid bd-cl-grey pd-5px">
-          Property
-        </div>
-        <div class="bd-w-1px bd-st-solid bd-cl-grey pd-5px">
-          font-weight
-        </div>
-      </div>
-    </div>
+    <table-atomic :data="property"></table-atomic>
   </div>
 </template>
+
+<script>
+import TableAtomic from '@/components/TableAtomic'
+export default {
+  components: {
+    TableAtomic
+  },
+  data () {
+    return {
+      property: [
+        ['Class', 'f-drt-[value]-[responsive]'],
+        ['Property', 'flex-direction']
+      ]
+    }
+  }
+}
+</script>
+
