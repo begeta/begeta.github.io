@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Flex Direction</h1>
-    <div>ใช้สำหรับกำหนดทิศทางการจัดวางของ Flex Items</div>
+    <h1>Flex Wrap</h1>
+    <div>ใช้สำหรับกำหนดวิธีการ Wrap Flex items ด้านใน</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -25,12 +25,12 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'f-drt-[value]-[responsive]'],
-        ['Property', 'flex-direction']
+        ['Class', 'f-w'],
+        ['Property', 'flex-wrap']
       ],
       value: [
-        ['Class', 'row', 'column'],
-        ['Value Description', 'สำหรับ "row"', 'สำหรับ "column"']
+        ['Class', 'nowrap', 'wrap', 'wrap-reverse'],
+        ['Value Description', 'สำหรับ "nowrap"', 'สำหรับ "wrap"', 'สำหรับ "wrap-reverse"']
       ],
       responsive: [
         ['Class', 'mobile', 'tablet', 'desktop', 'widescreen'],
