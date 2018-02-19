@@ -4,13 +4,13 @@
     <div>ใช้สำหรับกำหนดวิธีการ Wrap Flex items ด้านใน</div>
 
     <h3>Property</h3>
-    <table-atomic :data="property" :width="350"></table-atomic>
+    <table-atomic :data="property"></table-atomic>
 
     <h3>Value</h3>
-    <table-atomic :data="value" :width="350"></table-atomic>
+    <table-atomic :data="value"></table-atomic>
 
     <h3>Responsive YES</h3>
-    <table-atomic :data="responsive" :width="350"></table-atomic>
+    <table-atomic :data="responsive"></table-atomic>
 
     <h3>Hover NO</h3>
   </div>
