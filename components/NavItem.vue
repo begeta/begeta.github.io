@@ -59,6 +59,10 @@
                 routerName: 'alignment-aligncontent'
               },
               {
+                name: 'Justify Content',
+                routerName: 'alignment-justifycontent'
+              },
+              {
                 name: 'Align Self',
                 routerName: 'alignment-alignself'
               },
