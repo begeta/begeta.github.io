@@ -2,12 +2,12 @@
   <div class="pd-10px">
     <h1>Box Size</h1>
     <div>เป็น Atomic Class ที่ใช้จัดการ Style ที่เกี่ยวกับ Size ของ Box Model ประกอบด้วย</div>
-    <ui>
-        <li>Width</li>
-        <li>Height</li>
-        <li>Max Width</li>
-        <li>Max Height</li>
-    </ui>
+    <ul>
+      <li>Width</li>
+      <li>Height</li>
+      <li>Max Width</li>
+      <li>Max Height</li>
+    </ul>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
