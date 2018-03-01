@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Color</h1>
-    <div>เป็น Atomic Class ที่ใช้จัดการ Style ที่เกี่ยวกับ Color ประกอบด้วย</div>
+    <h1>Display</h1>
+    <div>เป็น Atomic Class ที่ใช้จัดการ Style ที่เกี่ยวกับ Display ประกอบด้วยงของ Flex Items</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -25,12 +25,12 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'cl'],
-        ['Property', 'color']
+        ['Class', 'dp'],
+        ['Property', 'display']
       ],
       value: [
-        ['Class', 'primary', 'white', 'light', 'black', 'link', 'info', 'success', 'warning', 'danger'],
-        ['Value Description', '#1066FD', '#FFFFFF', '#F5F5F5', '#000000', '#3675DA', '#2B9EEC', '#32D065', '#FEDD62', '#FC3C63']
+        ['Class', 'block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'table', 'none'],
+        ['Value Description', 'สำหรับ "block"', 'สำหรับ "inline"', 'สำหรับ "inline-block"', 'สำหรับ "flex"', 'สำหรับ "inline-flex"', 'สำหรับ "grid"', 'สำหรับ "table"', 'สำหรับ "none"']
       ],
       responsive: [
         ['Class', 'mobile', 'tablet', 'desktop', 'widescreen'],
