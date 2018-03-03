@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Object Fit</h1>
-    <div>เป็น Atomic Class ที่ใช้กำหนดการ Fill Content ใน Container ของ Replaced Elements ประกอบไปด้วย</div>
+    <h1>Opacity</h1>
+    <div>เป็น Atomic Class ที่ใช้จัดการ Style ที่เกี่ยวกับ Opacity ประกอบด้วย</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -25,12 +25,12 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'oj-f'],
-        ['Property', 'object-fit']
+        ['Class', 'opct'],
+        ['Property', 'opacity']
       ],
       value: [
-        ['Class', 'cover', 'contain', 'fill', 'none'],
-        ['Value Description', 'สำหรับ "cover"', 'สำหรับ "contain"', 'สำหรับ "fill"', 'สำหรับ "none"']
+        ['Class', '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'],
+        ['Value Description', 'สำหรับ "0"', 'สำหรับ "0.1"', 'สำหรับ "0.2"', 'สำหรับ "0.3"', 'สำหรับ "0.4"', 'สำหรับ "0.5"', 'สำหรับ "0.6"', 'สำหรับ "0.7"', 'สำหรับ "0.8"', 'สำหรับ "0.9"', 'สำหรับ "1"']
       ],
       responsive: [
         ['Class', 'mobile', 'tablet', 'desktop', 'widescreen'],
