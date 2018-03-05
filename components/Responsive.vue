@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h3>Responsive YES</h3>
-    <table-atomic :data="responsive"></table-atomic>
+    <table-atomic :data="responsive_data"></table-atomic>
   </div>
 </template>
 
@@ -13,7 +12,7 @@ export default {
   },
   data () {
     return {
-      responsive: [
+      responsive_data: [
         ['Class', 'mobile', 'tablet', 'desktop', 'widescreen'],
         ['Breakpoints', 'up to 768px', 'from 769px', 'from 1024px', 'from 1408px']
       ]
