@@ -196,7 +196,7 @@
           },
           {
             name: 'Z-Index',
-            routerName: 'z-index',
+            routerName: 'zindex',
           }
         ]
       }
