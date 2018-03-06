@@ -10,7 +10,7 @@
     <table-atomic :data="value"></table-atomic>
 
     <h3>Responsive YES</h3>
-    <table-atomic :data="responsive"></table-atomic>
+    <responsive/>
 
     <h3>Hover NO</h3>
   </div>
@@ -18,9 +18,12 @@
 
 <script>
 import TableAtomic from '@/components/TableAtomic'
+import Responsive from '@/components/Responsive'
+
 export default {
   components: {
-    TableAtomic
+    TableAtomic,
+    Responsive
   },
   data () {
     return {
@@ -31,10 +34,6 @@ export default {
       value: [
         ['Class', '0px', '1px', '2px', '3px', '4px', '5px', '10px', '15px', '20px', '25px', '30px'],
         ['Value Description', '0px', '1px', '2px', '3px', '4px', '5px', '10px', '15px', '20px', '25px', '30px']
-      ],
-      responsive: [
-        ['Class', 'mobile', 'tablet', 'desktop', 'widescreen'],
-        ['Breakpoints', 'up to 768px', 'from 769px', 'from 1024px', 'from 1408px']
       ]
     }
   }

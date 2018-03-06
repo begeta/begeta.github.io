@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Object Fit</h1>
-    <div>เป็น Atomic Class ที่ใช้กำหนดการ Fill Content ใน Container ของ Replaced Elements ประกอบไปด้วย</div>
+    <h1>Z-Index</h1>
+    <div>เป็น Atomic Class ค่าของ Z-Index เพื่อกำหนดลำดับชั้นการจัดวางในแนวแกน Z-Axis</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -28,12 +28,12 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'oj-f'],
-        ['Property', 'object-fit']
+        ['Class', 'z-id'],
+        ['Property', 'z-index']
       ],
       value: [
-        ['Class', 'cover', 'contain', 'fill', 'none'],
-        ['Value Description', 'สำหรับ "cover"', 'สำหรับ "contain"', 'สำหรับ "fill"', 'สำหรับ "none"']
+        ['Class', 'auto', '0', '1', '-1'],
+        ['Value Description', 'ใช้สำหรับ "auto"', 'สำหรับ "0"', 'สำหรับ "1"', 'สำหรับ "-1"']
       ]
     }
   }

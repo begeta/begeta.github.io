@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Object Fit</h1>
-    <div>เป็น Atomic Class ที่ใช้กำหนดการ Fill Content ใน Container ของ Replaced Elements ประกอบไปด้วย</div>
+    <h1>Text Align</h1>
+    <div>ใช้สำหรับกำหนดความหนาของ Alignment ของ Inline Content ด้านใน Container</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -28,13 +28,13 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'oj-f'],
-        ['Property', 'object-fit']
+        ['Class', 't-al'],
+        ['Property', 'text-align']
       ],
       value: [
-        ['Class', 'cover', 'contain', 'fill', 'none'],
-        ['Value Description', 'สำหรับ "cover"', 'สำหรับ "contain"', 'สำหรับ "fill"', 'สำหรับ "none"']
-      ]
+        ['Class', 'left', 'right', 'center', 'justify'],
+        ['Value Description', 'สำหรับ "left"', 'สำหรับ "right"', 'สำหรับ "center"', 'สำหรับ "justify"']
+      ],
     }
   }
 }
