@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Border Color</h1>
-    <div>ใช้กำหนดสีของ Border</div>
+    <h1>Z-Index</h1>
+    <div>เป็น Atomic Class ค่าของ Z-Index เพื่อกำหนดลำดับชั้นการจัดวางในแนวแกน Z-Axis</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -28,12 +28,12 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bd-cl'],
-        ['Property', 'border-color']
+        ['Class', 'z-id'],
+        ['Property', 'z-index']
       ],
       value: [
-        ['Class', 'primary', 'white', 'light', 'black', 'link', 'info', 'success', 'warning', 'danger'],
-        ['Value Description', '#1066FD', '#FFFFFF', '#F5F5F5', '#000000', '#3675DA', '#2B9EEC', '#32D065', '#FEDD62', '#FC3C63']
+        ['Class', 'auto', '0', '1', '-1'],
+        ['Value Description', 'ใช้สำหรับ "auto"', 'สำหรับ "0"', 'สำหรับ "1"', 'สำหรับ "-1"']
       ]
     }
   }

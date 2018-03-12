@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Border Color</h1>
-    <div>ใช้กำหนดสีของ Border</div>
+    <h1>Text Transform</h1>
+    <div>ใช้กำหนด Text Transform ให้กับ Text ของ Element</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -28,13 +28,13 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bd-cl'],
-        ['Property', 'border-color']
+        ['Class', 't-tf'],
+        ['Property', 'text-transform']
       ],
       value: [
-        ['Class', 'primary', 'white', 'light', 'black', 'link', 'info', 'success', 'warning', 'danger'],
-        ['Value Description', '#1066FD', '#FFFFFF', '#F5F5F5', '#000000', '#3675DA', '#2B9EEC', '#32D065', '#FEDD62', '#FC3C63']
-      ]
+        ['Class', 'capitalize', 'lowercase', 'uppercase', 'none'],
+        ['Value Description', 'สำหรับ "capitalize"', 'สำหรับ "lowercase"', 'สำหรับ "uppercase"', 'สำหรับ "none"']
+      ],
     }
   }
 }
