@@ -125,26 +125,6 @@ export default {
   width: 180px;
 }
 
-/* Scrollbar
-  -------------------------- */
-.is-scroll-container {
-  width: 100%;
-  height: calc(100vh - 60px);
-  overflow-y: auto;
-}
-
-.is-scroll-container::-webkit-scrollbar {
-  width: 0.9rem;
-}
-
-.is-scroll-container::-webkit-scrollbar-thumb {
-  background-color: rgba(186,186,186,0.5);
-}
-
-.is-scroll-container::-webkit-scrollbar-track {
-  background-color: rgba(35,44,65,0.01);
-}
-
 /* Mobile
   -------------------------- */
 /* @media screen and (max-width: 768px) {

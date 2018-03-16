@@ -6,12 +6,12 @@
           <aside class="column f-s-16px pd-0px ovf-y-auto h-55calc w-100pct f-drt-column jtf-space-between is-background-aside">
             <ul id="menu-list" class="l-h-125pct pd-hrzt-15px f-s-15px">
               <li :key="menu.routerName" v-for="menu in menus">
-                <a @click="$router.push({name: menu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routerName ? 'pd-10px bd-rd-3px bg-cl-light cl-grey' : ''">
+                <a @click="$router.push({name: menu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routerName ? 'cl-black bd-rd-4px pd-l-10px is-active-menu' : ''">
                   {{menu.name}}
                 </a>
                 <ul v-if="menu.subMenus">
                   <li :key="subMenu.routerName" v-for="subMenu in menu.subMenus">
-                    <a @click="$router.push({name: subMenu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === subMenu.routerName ? 'pd-10px bd-rd-3px bg-cl-light cl-grey' : ''">
+                    <a @click="$router.push({name: subMenu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === subMenu.routerName ? 'cl-black bd-rd-4px pd-l-10px is-active-menu' : ''">
                       {{subMenu.name}}
                     </a>
                   </li>
@@ -227,5 +227,9 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.is-active-menu {
+  background: rgba(0,0,0,.03);
 }
 </style>
