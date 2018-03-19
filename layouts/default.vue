@@ -3,7 +3,7 @@
   <nav-bar/>
   <div class="dp-flex f-drt-row f-drt-column-mobile">
     <nav-menu/>
-    <div class="h-55calc w-100pct ovf-y-auto">
+    <div class="h-55calc w-100pct ovf-y-auto pd-l-20px">
       <nuxt/>
     </div>
   </div>
