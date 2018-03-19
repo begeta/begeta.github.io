@@ -12,7 +12,7 @@
     <h3>Responsive <span class="cl-success">YES</span></h3>
     <responsive/>
 
-    <h3>Hover NO</h3>
+    <h3>Hover <span class="cl-danger">NO</span></h3>
   </div>
 </template>
 
