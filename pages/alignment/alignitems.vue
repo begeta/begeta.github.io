@@ -9,7 +9,7 @@
     <h3>Value</h3>
     <table-atomic :data="value"></table-atomic>
 
-    <h3>Responsive YES</h3>
+    <h3>Responsive <span class="cl-success">YES</span></h3>
     <responsive/>
 
     <h3>Hover NO</h3>
