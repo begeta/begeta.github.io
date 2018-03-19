@@ -1,5 +1,6 @@
 <template>
   <div class="is-menu-bar-sticky">
+    <nav-bar/>
     <nav-item class="dp-none-mobile"/>
     <!-- <nav-mobile class="is-hidden-widescreen"/> -->
   </div>
@@ -8,10 +9,12 @@
 <script>
 import NavItem from './NavItem'
 import NavMobile from './NavMobile'
+import NavBar from '@/components/NavBar'
 
 export default {
   components: {
     NavItem,
+    NavBar,
     NavMobile
   }
 }

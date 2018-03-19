@@ -3,8 +3,8 @@
     <nav class="w-240px" role="navigation" aria-label="main navigation">
       <div class="container al-it-column bg-cl-light">
         <div>
-          <aside class="column f-s-16px pd-0px ovf-y-auto h-55calc w-100pct f-drt-column jtf-space-between is-background-aside">
-            <ul id="menu-list" class="l-h-125pct pd-hrzt-15px f-s-15px">
+          <aside class="column f-s-16px pd-0px ovf-y-auto h-75calc w-100pct f-drt-column jtf-space-between is-background-aside">
+            <ul id="menu-list" class="mg-t-0px l-h-125pct pd-hrzt-15px f-s-15px">
               <li :key="menu.routerName" v-for="menu in menus">
                 <a @click="$router.push({name: menu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routerName ? 'cl-black bd-rd-4px pd-l-10px is-active-menu' : ''">
                   {{menu.name}}
@@ -207,7 +207,6 @@
 <style scoped>
 #menu-list li ul {
   border-left: 1px solid #dbdbdb;
-  margin: .75em;
   padding-left: .75em;
   list-style: none;
 }
