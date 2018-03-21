@@ -31,6 +31,10 @@
       return {
         menus: [
           {
+            name: 'Get Started',
+            routerName: 'index',
+          },
+          {
             name: 'Alignment',
             routerName: 'alignment',
             subMenus: [
