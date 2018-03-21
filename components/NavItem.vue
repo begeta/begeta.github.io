@@ -48,7 +48,7 @@
               },
               {
                 name: 'Flex Grow',
-                routerName: 'flex-grow'
+                routerName: 'alignment-flexgrow'
               },
               {
                 name: 'Align Items',
