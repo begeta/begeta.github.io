@@ -8,7 +8,6 @@ before_script:
   - yarn
 script: 
   - yarn generate
-  - cp dist docs
 deploy:
   provider: pages
   skip-cleanup: true
