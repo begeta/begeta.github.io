@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'f-w'],
+        ['Class', 'f-w-[value]-[responsive]'],
         ['Property', 'flex-wrap']
       ],
       value: [

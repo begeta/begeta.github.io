@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bg-pst'],
+        ['Class', 'bg-pst-[value]-[responsive]'],
         ['Property', 'background-position']
       ],
       value: [

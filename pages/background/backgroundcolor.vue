@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bg-cl'],
+        ['Class', 'bg-cl-[value]-[responsive]'],
         ['Property', 'background-color']
       ],
       value: [

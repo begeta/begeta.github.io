@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'cs'],
+        ['Class', 'cs-[value]-[responsive]'],
         ['Property', 'cursor']
       ],
       value: [
