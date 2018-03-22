@@ -8,11 +8,12 @@ before_script:
   - yarn
 script: 
   - yarn generate
+  - rm -rf docs
+  - mv dist docs
 deploy:
-  provider: pages
+  provider: script
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
-  local-dir: dist
+  script: bash push.sh
   on:
     branch: master
