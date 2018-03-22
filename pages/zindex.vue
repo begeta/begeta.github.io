@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'z-id'],
+        ['Class', 'z-id-[value]-[responsive]'],
         ['Property', 'z-index']
       ],
       value: [

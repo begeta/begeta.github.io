@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 't-al'],
+        ['Class', 't-al-[value]-[responsive]'],
         ['Property', 'text-align']
       ],
       value: [

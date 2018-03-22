@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'l-h'],
+        ['Class', 'l-h-[value]-[responsive]'],
         ['Property', 'line-height']
       ],
       value: [

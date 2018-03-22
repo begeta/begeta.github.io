@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'f-g-[value]'],
+        ['Class', 'f-g-[value]-[responsive]'],
         ['Property', 'flex-grow']
       ],
       value: [

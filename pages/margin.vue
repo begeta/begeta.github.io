@@ -37,7 +37,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'mg', 'mg-t', 'mg-bt', 'mg-l', 'mg-r', 'mg-vtc', 'mg-hrzt'],
+        ['Class', 'mg-[value]-[responsive]', 'mg-t-[value]-[responsive]', 'mg-bt-[value]-[responsive]', 'mg-l-[value]-[responsive]', 'mg-r-[value]-[responsive]', 'mg-vtc-[value]-[responsive]', 'mg-hrzt-[value]-[responsive]'],
         ['Property', 'margin', 'margin-top', 'margin-bottom', 'margin-left', 'margin-right', 'margin-top และ margin-bottom', 'margin-left และ margin-right']
       ],
       value: [

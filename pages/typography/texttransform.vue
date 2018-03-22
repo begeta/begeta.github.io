@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 't-tf'],
+        ['Class', 't-tf-[value]-[responsive]'],
         ['Property', 'text-transform']
       ],
       value: [

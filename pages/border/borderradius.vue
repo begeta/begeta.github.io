@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bd-rd', 'bd-t-l-rd', 'bd-t-r-rd', 'bd-bt-l-rd', 'bd-bt-r-rd'],
+        ['Class', 'bd-rd-[value]-[responsive]', 'bd-t-l-rd-[value]-[responsive]', 'bd-t-r-rd-[value]-[responsive]', 'bd-bt-l-rd-[value]-[responsive]', 'bd-bt-r-rd-[value]-[responsive]'],
         ['Property', 'border-radius', 'border-top-left-radius', 'border-top-right-radius', 'border-bottom-left-radius', 'border-bottom-right-radius']
       ],
       value: [

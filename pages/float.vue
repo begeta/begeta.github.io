@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'f'],
+        ['Class', 'f-[value]-[responsive]'],
         ['Property', 'float']
       ],
       value: [
