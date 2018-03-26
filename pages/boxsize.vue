@@ -38,8 +38,8 @@ export default {
         ['Property', 'width', 'height', 'min-width', 'min-height', 'max-width', 'max-height']
       ],
       value: [
-        ['Class', 'auto', 'fit-content', '0px 1px 2px 3px 4px 5px 6px 7px 8px 9px 10px 12px 14px 15px 20px 25px 30px 50px 60px 90px 80px 90px 100px', '0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%'],
-        ['Value Description', 'ใช้สำหรับ "auto"', 'ใช้สำหรับ "fit-content"', '0px 1px 2px 3px 4px 5px 6px 7px 8px 9px 10px 12px 14px 15px 20px 25px 30px 50px 60px 90px 80px 90px 100px', '0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%']
+        ['Class', 'auto', 'fit-content', '0px - 300px', '0calc - 300calc', '0pct - 100pct', '0vh - 100vh', '0vw - 100vw'],
+        ['Value Description', 'ใช้สำหรับ "auto"', 'ใช้สำหรับ "fit-content"', '0px - 300px', '0calc - 300calc คือ calc(100[viweport] - [value]px)', '0% - 100%', '0vh - 100vh ของ height', '0vw - 100vw ของ width']
       ]
     }
   }
