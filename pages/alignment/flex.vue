@@ -28,12 +28,12 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'f'],
+        ['Class', 'f-[value]-[responsive]'],
         ['Property', 'flex']
       ],
       value: [
-        ['Class', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-        ['Value Description', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+        ['Class', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'none'],
+        ['Value Description', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'สำหรับ "none"']
       ]
     }
   }

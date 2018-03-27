@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bd-cl'],
+        ['Class', 'bd-cl-[value]-[responsive]'],
         ['Property', 'border-color']
       ],
       value: [

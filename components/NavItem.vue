@@ -54,6 +54,10 @@
                 routerName: 'alignment-flex'
               },
               {
+                name: 'Flex Grow',
+                routerName: 'alignment-flexgrow'
+              },
+              {
                 name: 'Align Items',
                 routerName: 'alignment-alignitems'
               },

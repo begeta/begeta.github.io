@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'lt-spc'],
+        ['Class', 'lt-spc-[value]-[responsive]'],
         ['Property', 'letter-spacing']
       ],
       value: [

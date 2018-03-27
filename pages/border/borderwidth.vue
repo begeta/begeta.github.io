@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bd-w', 'bd-t-w', 'bd-bt-w', 'bd-l-w', 'bd-r-w', 'bd-vtc-w', 'bd-hrzt-w'],
+        ['Class', 'bd-w-[value]-[responsive]', 'bd-t-w-[value]-[responsive]', 'bd-bt-w-[value]-[responsive]', 'bd-l-w-[value]-[responsive]', 'bd-r-w-[value]-[responsive]', 'bd-vtc-w-[value]-[responsive]', 'bd-hrzt-w-[value]-[responsive]'],
         ['Property', 'border-width', 'border-top-width', 'border-bottom-width', 'border-left-width', 'border-right-width', 'border-top-width และ border-bottom-width', 'border-left-width และ border-right-width']
       ],
       value: [

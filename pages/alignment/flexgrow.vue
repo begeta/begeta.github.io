@@ -1,7 +1,7 @@
 <template>
   <div class="pd-10px">
-    <h1>Cursor</h1>
-    <div>เป็น Atomic Class ที่ใช้จัดการ Style ที่เกี่ยวกับ Cursor ประกอบด้วย</div>
+    <h1>Flex Grow</h1>
+    <div>ใช้สำหรับกำหนดขนาดของตัว Flex Grow</div>
 
     <h3>Property</h3>
     <table-atomic :data="property"></table-atomic>
@@ -28,14 +28,15 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'cs-[value]-[responsive]'],
-        ['Property', 'cursor']
+        ['Class', 'f-g-[value]-[responsive]'],
+        ['Property', 'flex-grow']
       ],
       value: [
-        ['Class', 'pointer', 'help', 'not-allowed'],
-        ['Value Description', 'สำหรับ "pointer"', 'สำหรับ "help"', 'สำหรับ "not-allowed"']
+        ['Class', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+        ['Value Description', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
       ]
     }
   }
 }
 </script>
+

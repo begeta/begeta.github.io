@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'cl'],
+        ['Class', 'cl-[value]-[responsive]'],
         ['Property', 'color']
       ],
       value: [

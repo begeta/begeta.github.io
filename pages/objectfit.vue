@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'oj-f'],
+        ['Class', 'oj-f-[value]-[responsive]'],
         ['Property', 'object-fit']
       ],
       value: [

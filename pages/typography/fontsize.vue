@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'f-s'],
+        ['Class', 'f-s-[value]-[responsive]'],
         ['Property', 'font-size']
       ],
       value: [

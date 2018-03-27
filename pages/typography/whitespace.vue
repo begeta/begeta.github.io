@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'w-sp'],
+        ['Class', 'w-sp-[value]-[responsive]'],
         ['Property', 'white-space']
       ],
       value: [

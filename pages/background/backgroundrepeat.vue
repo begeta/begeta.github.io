@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bg-rp'],
+        ['Class', 'bg-rp-[value]-[responsive]'],
         ['Property', 'background-repeat']
       ],
       value: [

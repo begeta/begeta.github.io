@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'jtf-s'],
+        ['Class', 'jtf-s-[value]-[responsive]'],
         ['Property', 'justify-self']
       ],
       value: {

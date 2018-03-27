@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'ovf', 'ovf-x', 'ovf-y'],
+        ['Class', 'ovf-[value]-[responsive]', 'ovf-x-[value]-[responsive]', 'ovf-y-[value]-[responsive]'],
         ['Property', 'overflow', 'overflow-x', 'overflow-y']
       ],
       value: [

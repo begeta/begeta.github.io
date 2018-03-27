@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'opct'],
+        ['Class', 'opct-[value]-[responsive]'],
         ['Property', 'opacity']
       ],
       value: [

@@ -38,7 +38,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'pst', 't', 'bt', 'l', 'r'],
+        ['Class', 'pst-[value]-[responsive]', 't-[value]-[responsive]', 'bt-[value]-[responsive]', 'l-[value]-[responsive]', 'r-[value]-[responsive]'],
         ['Property', 'position', 'top', 'bottom', 'left', 'right']
       ],
       valuePosition: [

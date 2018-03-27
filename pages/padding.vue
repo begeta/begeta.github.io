@@ -37,7 +37,7 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'pd', 'pd-t', 'pd-bt', 'pd-l', 'pd-r', 'pd-vtc', 'pd-hrzt'],
+        ['Class', 'pd-[value]-[responsive]', 'pd-t-[value]-[responsive]', 'pd-bt-[value]-[responsive]', 'pd-l-[value]-[responsive]', 'pd-r-[value]-[responsive]', 'pd-vtc-[value]-[responsive]', 'pd-hrzt-[value]-[responsive]'],
         ['Property', 'padding', 'padding-top', 'padding-bottom', 'padding-left', 'padding-right', 'padding-top และ padding-bottom', 'padding-left และ padding-right']
       ],
       value: [
