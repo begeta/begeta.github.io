@@ -33,11 +33,11 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'h', 'mn-h', 'mx-h'],
+        ['Class', 'h-[value]-[responsive]', 'mn-h-[value]-[responsive]', 'mx-h-[value]-[responsive]'],
         ['Property', 'height', 'min-height', 'max-height']
       ],
       value: [
-        ['Class', 'auto', 'fit-content', '0px - 300px', '0% - 100%', '0calc - 300calc'],
+        ['Class', 'auto', 'fit-content', '0px - 300px', '0pct - 100pct', '0calc - 300calc'],
         ['Value Description', 'ใช้สำหรับ "auto"', 'ใช้สำหรับ "fit-content"', 'สูง 0px ถึง 300px', 'สูง 0% ถึง 100%', 'สูง calc(100vw - 0px) ถึง calc(100vw - 300px)']
       ],
       responsive: [
