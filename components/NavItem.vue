@@ -6,7 +6,10 @@
           <aside class="column f-s-16px pd-0px ovf-y-auto h-75calc w-100pct f-drt-column jtf-space-between is-background-aside">
             <ul id="menu-list" class="mg-t-0px l-h-125pct pd-hrzt-15px f-s-15px">
               <li :key="menu.routerName" v-for="menu in menus">
-                <a @click="$router.push({name: menu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routerName ? 'cl-black bd-rd-4px pd-l-10px is-active-menu' : ''">
+                <span v-if="menu.subMenus" class="dp-flex h-50px pd-0px al-it-center is-fill-gray">
+                  {{menu.name}}
+                </span>
+                <a v-else @click="$router.push({name: menu.routerName})" class="dp-flex h-50px pd-0px al-it-center is-fill-gray" :class="$route.name === menu.routerName ? 'cl-black bd-rd-4px pd-l-10px is-active-menu' : ''">
                   {{menu.name}}
                 </a>
                 <ul v-if="menu.subMenus">
@@ -125,12 +128,22 @@
             ]
           },
           {
-            name: 'Box Position',
-            routerName: 'boxposition',
-          },
-          {
             name: 'Box Size',
             routerName: 'boxsize',
+            subMenus: [
+              {
+                name: 'Height',
+                routerName: 'boxsize-height',
+              },
+              {
+                name: 'Width',
+                routerName: 'boxsize-width',
+              }
+            ]
+          },
+          {
+            name: 'Box Position',
+            routerName: 'boxposition',
           },
           {
             name: 'Color',
