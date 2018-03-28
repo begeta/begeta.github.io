@@ -1,7 +1,7 @@
 <template>
   <div class="dp-flex mg-5px">
-    <div class="dp-flex f-drt-column w-40pct is-bd-bottom" :key="keytr" v-for="(tr, keytr) in data" :class="{ 'is-bd-right': keytr !== 0 }">
-      <div class="is-bd-top is-bd-left pd-5px h-45px pd-10px" :key="keytd" v-for="(td, keytd) in tr">
+    <div v-height class="dp-flex f-drt-column w-40pct is-bd-bottom" :key="keytr" v-for="(tr, keytr) in data" :class="{ 'is-bd-right': keytr !== 0 }">
+      <div class="is-bd-top is-bd-left pd-5px pd-10px" :key="keytd" v-for="(td, keytd) in tr">
         <div v-if="isColorCode(td)">
           <div :style="{ backgroundColor: td }" class="f-left w-30px h-30px bd-w-1px bd-st-solid bd-cl-light bd-rd-4px"></div>
           <div :class="{ 'f-w-bold cl-black': keytd === 0, 'cl-777': keytd !== 0 }" class="f-left pd-t-5px pd-l-10px">{{ td }}</div>
@@ -14,6 +14,11 @@
 
 <script>
 export default {
+  directives: {
+    height (el) {
+      console.log(el)
+    }
+  },
   props: [
     'data'
   ],
