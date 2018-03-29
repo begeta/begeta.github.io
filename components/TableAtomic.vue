@@ -8,13 +8,7 @@
         </div>
         <span :class="{ 'f-w-bold cl-black': keytd === 0, 'cl-777': keytd !== 0 }" v-else>
           <div v-if="type !== '' && keytd !== 0 && keytr === 0">
-           <div v-if="type === 'property'" class="property">
-              {{ data[keytr][keytd] }}
-           </div>
-           <div v-else-if="type === 'value'" class="value">
-              {{ data[keytr][keytd] }}
-           </div>
-           <div v-else-if="type === 'responsive'" class="responsive">
+           <div class="tag" :class="type">
               {{ data[keytr][keytd] }}
            </div>
           </div>
@@ -68,25 +62,20 @@ export default {
 .cl-777 {
   color: #777;
 }
-.property {
+.tag {
   width: fit-content;
   border-radius: 4px;
-  background-color: #0050ff;
   padding: 5px 10px;
+}
+.property {
+  background-color: #0050ff;
   color: white;
 }
-
 .value {
-  width: fit-content;
-  border-radius: 4px;
   background-color: #23d160;
-  padding: 5px 10px;
   color: white;  
 }
 .responsive {
-  width: fit-content;
-  border-radius: 4px;
   background-color: #f5f5f5;
-  padding: 5px 10px;
 }
 </style>
