@@ -1,12 +1,12 @@
 <template>
-  <div class="dp-flex mg-5px">
-    <div v-height class="dp-flex f-drt-column w-40pct is-bd-bottom" :key="keytr" v-for="(tr, keytr) in data" :class="{ 'is-bd-right': keytr !== 0 }">
-      <div class="is-bd-top is-bd-left pd-5px pd-10px" :key="keytd" v-for="(td, keytd) in tr">
-        <div v-if="isColorCode(td)">
-          <div :style="{ backgroundColor: td }" class="f-left w-30px h-30px bd-w-1px bd-st-solid bd-cl-light bd-rd-4px"></div>
-          <div :class="{ 'f-w-bold cl-black': keytd === 0, 'cl-777': keytd !== 0 }" class="f-left pd-t-5px pd-l-10px">{{ td }}</div>
+  <div class="mg-5px is-bd-bottom w-90pct">
+    <div  class="dp-flex f-drt-row flex-1" :key="keytd" v-for="(free, keytd) in data[0]">
+      <div class="dp-flex w-100pct f-drt-column pd-10px is-bd-top is-bd-right" :class="{'is-bd-left': keytr === 0}" :key="keytr" v-for="(free,keytr) in length">
+        <div v-if="isColorCode(data[keytr][keytd])">
+          <div :style="{ backgroundColor: data[keytr][keytd] }" class="f-left w-30px h-30px bd-w-1px bd-st-solid bd-cl-light bd-rd-4px"></div>
+          <div :class="{ 'f-w-bold cl-black': keytd === 0, 'cl-777': keytd !== 0 }" class="f-left pd-t-5px pd-l-10px">{{ data[keytr][keytd] }}</div>
         </div>
-        <span :class="{ 'f-w-bold cl-black': keytd === 0, 'cl-777': keytd !== 0 }" v-else>{{ td }}</span>
+        <span :class="{ 'f-w-bold cl-black': keytd === 0, 'cl-777': keytd !== 0 }" v-else>{{ data[keytr][keytd] }}</span>
       </div>
     </div>
   </div>
@@ -14,14 +14,16 @@
 
 <script>
 export default {
-  directives: {
-    height (el) {
-      console.log(el)
+  props: {
+    data: {
+      type: Array
     }
   },
-  props: [
-    'data'
-  ],
+  computed: {
+    length () {
+      return Array(this.data.length).fill(0)
+    }
+  },
   methods: {
     isColorCode (str) {
       const pattern = new RegExp('^#(?:[0-9a-fA-F]{3}){1,2}$')

@@ -31,8 +31,8 @@ export default {
         ['Class', 'jtf-ct-[value]-[responsive]'],
         ['Property', 'justify-content']
       ],
-      value: {
-        class: [
+      value:[
+        [
           'Class',
           'start',
           'end',
@@ -45,7 +45,7 @@ export default {
           'space-around',
           'space-evenly'
         ],
-        description: [
+        [
           'Value Description',
           'สำหรับ "start"',
           'สำหรับ "end"',
@@ -58,7 +58,7 @@ export default {
           'สำหรับ "space-around"',
           'สำหรับ "space-evenly"'
         ]  
-      }
+      ]
     }
   }
 }

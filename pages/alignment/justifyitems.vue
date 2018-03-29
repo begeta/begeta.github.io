@@ -31,8 +31,8 @@ export default {
         ['Class', 'jtf-it-[value]-[responsive]'],
         ['Property', 'justify-items']
       ],
-      value: {
-        class: [
+      value: [
+        [
           'Class',
           'start',
           'end',
@@ -41,7 +41,7 @@ export default {
           'center',
           'strecth'
         ],
-        description: [
+        [
           'Value Description',
           'สำหรับ "start"',
           'สำหรับ "end"',
@@ -50,7 +50,7 @@ export default {
           'สำหรับ "center"',
           'สำหรับ "strecth"'
         ]  
-      }
+      ]
     }
   }
 }
