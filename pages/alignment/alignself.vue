@@ -4,10 +4,10 @@
     <div>เป็น Atomic Class ที่ใช้เพื่อระบุการจัดวางของตัว Flex Item เอง ใช้ Align Self เพื่อจัดในแกน Cross-Axis</div>
 
     <h3>Property</h3>
-    <table-atomic :data="property"></table-atomic>
+    <table-atomic :data="property" type="property"></table-atomic>
 
     <h3>Value</h3>
-    <table-atomic :data="value"></table-atomic>
+    <table-atomic :data="value" type="value"></table-atomic>
 
     <h3>Responsive <span class="cl-success">YES</span></h3>
     <responsive/>
@@ -31,8 +31,8 @@ export default {
         ['Class', 'al-s-[value]-[responsive]'],
         ['Property', 'align-self']
       ],
-      value: {
-        class: [
+      value: [
+        [
           'Class',
           'start',
           'end',
@@ -44,7 +44,7 @@ export default {
           'self-end',
           'strecth'
         ],
-        description: [
+        [
           'Value Description',
           'สำหรับ "start"',
           'สำหรับ "end"',
@@ -56,7 +56,7 @@ export default {
           'สำหรับ "self-end"',
           'สำหรับ "strecth"'
         ]  
-      }
+      ]
     }
   }
 }
