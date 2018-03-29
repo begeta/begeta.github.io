@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table-atomic :data="responsive_data"></table-atomic>
+    <table-atomic :data="responsive_data" type="responsive"></table-atomic>
   </div>
 </template>
 

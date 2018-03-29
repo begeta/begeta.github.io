@@ -4,10 +4,10 @@
     <div>เป็น Atomic Class ที่ใช้จัดการ การกระจาย Content ด้านใน Container ใช้ Justify Content เพื่อจัดในแกน Main-Axis</div>
 
     <h3>Property</h3>
-    <table-atomic :data="property"></table-atomic>
+    <table-atomic :data="property" type="property"></table-atomic>
 
     <h3>Value</h3>
-    <table-atomic :data="value"></table-atomic>
+    <table-atomic :data="value" type="value"></table-atomic>
 
     <h3>Responsive <span class="cl-success">YES</span></h3>
     <responsive/>

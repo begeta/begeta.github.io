@@ -4,10 +4,10 @@
     <div>เป็น Atomic Class ที่ใช้เพื่อระบุการจัดวางของตัว Flex Item เอง ใช้ Justify Self เพื่อจัดในแกน Main-Axis</div>
 
     <h3>Property</h3>
-    <table-atomic :data="property"></table-atomic>
+    <table-atomic :data="property" ></table-atomic>
 
     <h3>Value</h3>
-    <table-atomic :data="value"></table-atomic>
+    <table-atomic :data="value" type="value"></table-atomic>
 
     <h3>Responsive <span class="cl-success">YES</span></h3>
     <responsive/>
