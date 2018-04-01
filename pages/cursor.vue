@@ -32,8 +32,36 @@ export default {
         ['Property', 'cursor']
       ],
       value: [
-        ['Class', 'pointer', 'help', 'not-allowed'],
-        ['Value Description', 'สำหรับ "pointer"', 'สำหรับ "help"', 'สำหรับ "not-allowed"']
+        [
+          'Class',
+          'all-scroll',
+          'crosshair',
+          'default',
+          'text',
+          'help',
+          'move',
+          'not-allowed',
+          'none',
+          'pointer',
+          'progress',
+          'zoom-in',
+          'zoom-out'
+        ],
+        [
+          'Value Description',
+          'สำหรับ "all-scroll"',
+          'สำหรับ "crosshair"',
+          'สำหรับ "default"',
+          'สำหรับ "text"',
+          'สำหรับ "help"',
+          'สำหรับ "move"',
+          'สำหรับ "not-allowed"',
+          'สำหรับ "none"',
+          'สำหรับ "pointer"',
+          'สำหรับ "progress"',
+          'สำหรับ "zoom-in"',
+          'สำหรับ "zoom-out"'
+        ]
       ]
     }
   }
