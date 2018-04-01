@@ -32,8 +32,8 @@ export default {
         ['Property', 'font-size']
       ],
       value: [
-        ['Class', '8px', '9px', '10px', '11px', '12px', '13px', '14px', '15px', '16px', '18px', '20px', '24px', '30px', '40px'],
-        ['Value Description', 'สำหรับ "8px"', 'สำหรับ "9px"', 'สำหรับ "10px"', 'สำหรับ "11px"', 'สำหรับ "12px"', 'สำหรับ "13px"', 'สำหรับ "14px"', 'สำหรับ "15px"', 'สำหรับ "16px"', 'สำหรับ "18px"', 'สำหรับ "20px"', 'สำหรับ "24px"', 'สำหรับ "30px"', 'สำหรับ "40px"']
+        ['Class', '8px - 75px'],
+        ['Value Description', 'สำหรับ 8px ถึง 75px']
       ],
     }
   }

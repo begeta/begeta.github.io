@@ -32,8 +32,8 @@ export default {
         ['Property', 'white-space']
       ],
       value: [
-        ['Class', 'normal', 'no-wrap', 'pre', 'pre-line', 'pre-wrap'],
-        ['Value Description', 'สำหรับ "normal"', 'สำหรับ "no-wrap"', 'สำหรับ "pre"', 'สำหรับ "pre-line"', 'สำหรับ "pre-wrap"']
+        ['Class', 'normal', 'nowrap', 'pre', 'pre-line', 'pre-wrap'],
+        ['Value Description', 'สำหรับ "normal"', 'สำหรับ "nowrap"', 'สำหรับ "pre"', 'สำหรับ "pre-line"', 'สำหรับ "pre-wrap"']
       ],
     }
   }
