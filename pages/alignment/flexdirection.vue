@@ -32,8 +32,8 @@ export default {
         ['Property', 'flex-direction']
       ],
       value: [
-        ['Class', 'row', 'column'],
-        ['Value Description', 'สำหรับ "row"', 'สำหรับ "column"']
+        ['Class', 'row', 'row-reverse', 'column', 'column-reverse'],
+        ['Value Description', 'สำหรับ "row"', 'สำหรับ "row-reverse"', 'สำหรับ "column"', 'สำหรับ "column-reverse"']
       ]
     }
   }

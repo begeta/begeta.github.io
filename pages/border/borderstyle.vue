@@ -28,8 +28,26 @@ export default {
   data () {
     return {
       property: [
-        ['Class', 'bd-st-[value]-[responsive]'],
-        ['Property', 'border-style']
+        [
+          'Class',
+          'bd-st-[value]-[responsive]',
+          'bd-t-st-[value]-[responsive]',
+          'bd-bt-st-[value]-[responsive]',
+          'bd-l-st-[value]-[responsive]',
+          'bd-r-st-[value]-[responsive]',
+          'bd-vtc-st-[value]-[responsive]',
+          'bd-hrzt-st-[value]-[responsive]'
+        ],
+        [
+          'Property',
+          'border-style',
+          'border-top-style',
+          'border-bottom-style',
+          'border-left-style',
+          'border-right-style',
+          'border-top-style และ border-bottom-style',
+          'border-left-style และ border-right-style'
+        ]
       ],
       value: [
         ['Class', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'none', 'hidden'],
