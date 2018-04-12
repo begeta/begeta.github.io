@@ -21,7 +21,8 @@ module.exports = {
   ** Build configuration
   */
   css: [
-    { src: 'begeta/css/begeta.min.css', lang: 'css' }
+    { src: 'begeta/css/begeta.min.css', lang: 'css' },
+    { src: 'mdi/css/materialdesignicons.min.css', lang: 'css' }
   ],
   build: {
     /*
