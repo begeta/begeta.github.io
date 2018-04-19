@@ -14,19 +14,17 @@
       <a id="whatisbegeta" href="#whatisbegeta"><span class="cl-primary">#</span> What is Begeta ?</a>
     </h2>
     <div class="pd-20px bg-cl-light bd-rd-5px cl-777">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-      but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-      and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      Begeta is Vegeta from Dragon Ball but pronounce in Thai. He is the husband of Bulma.
+      Begeta add atomic css approach to Bulma.
     </div>
     <h2>
       <a id="whybegeta" href="#whybegeta"><span class="cl-primary">#</span> Why do we use Begeta ?</a>
     </h2>
     <div class="pd-20px bg-cl-light bd-rd-5px cl-777">
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-      The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
-      content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
-      and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+      content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+      and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
       sometimes by accident, sometimes on purpose (injected humour and the like).
     </div>
     <h2>
@@ -78,8 +76,8 @@ export default {
           `<link rel="stylesheet" type="text/css" href="node_modules/begeta/css/begeta.min.css">`
         ],
         example: [
-          `<div class="f-s-24px f-w-bold pd-20px cl-success"> 
-    Hello <span class="f-s-16px f-w-100 cl-danger">world</span> 
+          `<div class="f-s-24px f-w-bold pd-20px cl-success">
+    Hello <span class="f-s-16px f-w-100 cl-danger">world</span>
 </div>`
         ]
       }
