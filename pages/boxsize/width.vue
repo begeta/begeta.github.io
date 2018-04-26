@@ -37,8 +37,8 @@ export default {
         ['Property', 'width', 'min-width', 'max-width']
       ],
       value: [
-        ['Class', 'auto', 'fit-content', '0px - 300px', '0pct - 100pct', '0calc - 300calc'],
-        ['Value Description', 'ใช้สำหรับ "auto"', 'ใช้สำหรับ "fit-content"', 'กว้าง 0px ถึง 300px', 'กว้าง 0% ถึง 100%', 'กว้าง calc(100vw - 0px) ถึง calc(100vw - 300px)']
+        ['Class', 'auto', 'fit-content', '0px - 300px', '0vw - 100vw', '0pct - 100pct', '0calc - 300calc'],
+        ['Value Description', 'ใช้สำหรับ "auto"', 'ใช้สำหรับ "fit-content"', 'กว้าง 0px ถึง 300px', 'กว้าง 0vw ถึง 100vw', 'กว้าง 0% ถึง 100%', 'กว้าง calc(100vw - 0px) ถึง calc(100vw - 300px)']
       ],
       responsive: [
         ['Class', 'mobile', 'tablet', 'desktop', 'widescreen'],
