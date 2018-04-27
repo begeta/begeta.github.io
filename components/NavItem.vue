@@ -3,8 +3,9 @@
     <nav class="w-240px" role="navigation" aria-label="main navigation">
       <div class="container al-it-column bg-cl-light">
         <div>
-          <aside class="column f-s-16px pd-0px ovf-y-auto h-75calc w-100pct f-drt-column jtf-space-between is-background-aside">
-            <ul id="menu-list" class="mg-t-0px l-h-125pct pd-hrzt-15px f-s-15px">
+          <PerfectScrollbar class="h-75calc">
+          <aside class="column h-75calc f-s-16px pd-0px w-100pct f-drt-column jtf-space-between is-background-aside">
+            <ul id="menu-list" class="mg-t-0px h-75calc l-h-125pct pd-hrzt-15px f-s-15px">
               <li :key="menu.routerName" v-for="menu in menus">
                 <span v-if="menu.subMenus" class="dp-flex h-50px pd-0px al-it-center is-fill-gray">
                   {{menu.name}}
@@ -22,6 +23,7 @@
               </li>
             </ul>
           </aside>
+          </PerfectScrollbar>
         </div>
       </div>
     </nav>
@@ -29,7 +31,11 @@
 </template>
 
 <script>
+  import PerfectScrollbar from './PerfectScrollbar.vue'
   export default {
+    components: {
+      PerfectScrollbar
+    },
     data () {
       return {
         menus: [

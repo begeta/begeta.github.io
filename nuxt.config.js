@@ -22,7 +22,8 @@ module.exports = {
   */
   css: [
     { src: 'begeta/css/begeta.min.css', lang: 'css' },
-    { src: 'mdi/css/materialdesignicons.min.css', lang: 'css' }
+    { src: 'mdi/css/materialdesignicons.min.css', lang: 'css' },
+    { src: 'perfect-scrollbar/css/perfect-scrollbar.css', lang: 'css'}
   ],
   build: {
     /*
