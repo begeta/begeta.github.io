@@ -2,19 +2,21 @@
 <div class="dp-flex f-drt-column">
   <div class="dp-flex f-drt-row f-drt-column-mobile">
     <nav-menu/>
-    <div class="h-100vh w-100pct ovf-y-auto pd-l-20px">
+    <PerfectScrollbar class="h-100vh w-100pct pd-l-20px">
       <nuxt/>
-    </div>
+    </PerfectScrollbar>
   </div>
 </div>
 </template>
 
 <script>
 import NavMenu from '@/components/NavMenu'
+import PerfectScrollbar from '@/components/PerfectScrollbar'
 
 export default {
   components: {
-    NavMenu
+    NavMenu,
+    PerfectScrollbar
   }
 }
 </script>
