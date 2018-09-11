@@ -37,12 +37,8 @@ export default {
         ['Property', 'height', 'min-height', 'max-height']
       ],
       value: [
-        ['Class', 'auto', 'fit-content', '0px - 300px', '0vh - 100vh', '0pct - 100pct', '0calc - 300calc'],
-        ['Value Description', 'ใช้สำหรับ "auto"', 'ใช้สำหรับ "fit-content"', 'สูง 0px ถึง 300px', 'สูง 0vh ถึง 100vh', 'สูง 0% ถึง 100%', 'สูง calc(100vw - 0px) ถึง calc(100vw - 300px)']
-      ],
-      responsive: [
-        ['Class', 'mobile', 'tablet', 'desktop', 'widescreen'],
-        ['Breakpoints', 'up to 768px', 'from 769px', 'from 1024px', 'from 1408px']
+        ['Class', 'auto', 'fit-content', '0vh - 100vh', '0pct - 100pct'],
+        ['Value Description', 'ใช้สำหรับ "auto"', 'ใช้สำหรับ "fit-content"', 'สูง 0vh ถึง 100vh', 'สูง 0% ถึง 100%']
       ]
     }
   }
