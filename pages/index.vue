@@ -23,32 +23,6 @@
     <div class="pd-20px bg-cl-light bd-rd-5px cl-777">
       Atomic Design details all that goes into creating and maintaining robust design systems, allowing you to roll out higher quality, more consistent UIs faster than ever before. This book introduces a methodology for thinking of our UIs as thoughtful hierarchies, discusses the qualities of effective pattern libraries, and showcases techniques to transform your team's design and development workflow.
     </div>
-    <h2>
-      <a id="installing" href="#installing"><span class="cl-primary">#</span> Installing</a>
-    </h2>
-    <div>
-      <highlight id="hljs" language="bash" :code="codes.installing[0]"></highlight>
-      <div class="pd-l-5px f-s-12px cl-777">Or</div>
-      <highlight id="hljs" language="bash" :code="codes.installing[1]"></highlight>
-    </div>
-    <h2>
-      <a id="usage" href="#usage"><span class="cl-primary">#</span> Usage</a>
-    </h2>
-    <div>
-      <highlight id="hljs" language="javascript" :code="codes.usage[0]"></highlight>
-      <div class="pd-l-5px f-s-12px cl-777">Or</div>
-      <highlight id="hljs" language="html" :code="codes.usage[1]"></highlight>
-    </div>
-    <h2>
-      <a id="example" href="#example"><span class="cl-primary">#</span> Example</a>
-    </h2>
-    <div class="mg-bt-30px">
-      <highlight id="hljs" language="html" :code="codes.example[0]"></highlight>
-      <div class="pd-l-5px f-s-12px cl-777">Result</div>
-      <div class="f-s-24px f-w-bold pd-20px cl-success">
-        Hello <span class="f-s-16px f-w-100 cl-danger">world</span>
-      </div>
-    </div>
   </div>
 </template>
 
