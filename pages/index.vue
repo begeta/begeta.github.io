@@ -73,7 +73,9 @@ export default {
         ],
         usage: [
           `import 'begeta/css/begeta.min.css'`,
-          `<link rel="stylesheet" type="text/css" href="node_modules/begeta/css/begeta.min.css">`
+          `<link rel="stylesheet" type="text/css" href="node_modules/begeta/css/begeta.min.css">
+// With unpkg.com
+<link rel="stylesheet" type="text/css" href="//unpkg.com/begeta/css/begeta.min.css">`,
         ],
         example: [
           `<div class="f-s-24px f-w-bold pd-20px cl-success">
