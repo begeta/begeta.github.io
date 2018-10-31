@@ -43,6 +43,10 @@
             name: 'Get Started',
             routerName: 'index',
           },
+           {
+            name: 'Installation',
+            routerName: 'installation',
+          },
           {
             name: 'Alignment',
             routerName: 'alignment',
